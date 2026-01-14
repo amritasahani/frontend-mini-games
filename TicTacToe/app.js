@@ -62,7 +62,8 @@ const disableBoxes = () => {
 const enableBoxes = () => {
     for (let box of boxes) {
         box.disabled = false;
-        box.innerText = ""
+        box.innerText = "";
+        box.classList.remove("o-style","x-style");
     }
 };
      
@@ -90,4 +91,5 @@ const checkWinner = () => {
 };
 
 newGameButton.addEventListener("click", resetGame);
+
 resetBtn.addEventListener("click", resetGame);
